@@ -19,6 +19,13 @@ public class BinarySearch implements IAlgInterface{
         arraySize = size;
     }
 
+    BinarySearch(int[] array, int val){
+        searchVal = val;
+        myArray = new MyArray(array);
+        arraySize = array.length;
+    }
+
+
 
     public static void main(String args[]){
         BinarySearch newSearch = new BinarySearch();
@@ -70,7 +77,7 @@ public class BinarySearch implements IAlgInterface{
      * @param high upper bound of array
      * @return index of match or -1 if not found
      */
-     private int recursiveSearch(int[] arrayToSearch, int key, int low, int high){
+     protected int recursiveSearch(int[] arrayToSearch, int key, int low, int high){
          int mid = ((high - low)/2)+low;
          int midVal = arrayToSearch[mid];
          System.out.println("low:  " + low + "   mid: " + mid + "  midVal: " + midVal + "   high: " + high);
@@ -97,7 +104,7 @@ public class BinarySearch implements IAlgInterface{
      * @param key the value to search for.
      * @return index of match or -1 if not found
      */
-     private int iterativeSearch(int[] arrayToSearch, int key){
+    protected int iterativeSearch(int[] arrayToSearch, int key){
          int low = 0;
          int high = arrayToSearch.length-1;
 
