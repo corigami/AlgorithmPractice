@@ -1,6 +1,7 @@
 package com.corigami.practice;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -25,12 +26,14 @@ class MaxInSlidingWindowTest {
     }
 
     @Test
+    @DisplayName("Test Basic Find Max in Window Method")
     void findMaxInWindow() {
         testMax.findMaxInWindow(testArray,WINDOWSIZE);
         assertArrayEquals(results,testMax.getResults() ,"array does not match");
      }
 
     @Test
+    @DisplayName("Test Find Max in Window with Heap Method")
     void findMaxInWindowWithHeap() {
         testMax.findMaxInWindowWithHeap(testArray,WINDOWSIZE);
         assertArrayEquals(results,testMax.getResults() ,"array does not match");
