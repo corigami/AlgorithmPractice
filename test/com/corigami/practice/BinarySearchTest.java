@@ -18,11 +18,11 @@ class BinarySearchTest {
     @BeforeEach
     void setUp() {
         testArray = new int[]{0, 1, 2, 3, 4, 5, 6, 7,8,9};
+        testSearch = new BinarySearch(testArray, 0);//key value is not required for testing
     }
 
     @Test
     void recursiveSearch() {
-        testSearch = new BinarySearch(testArray, 0);
         assertEquals(0,testSearch.recursiveSearch(testArray,0,0,9),"did not find first entry");
         testSearch = new BinarySearch(testArray, 9);
         assertEquals(9,testSearch.recursiveSearch(testArray,9,0,9),"did not find last entry");
@@ -31,7 +31,6 @@ class BinarySearchTest {
 
     @Test
     void iterativeSearch() {
-        testSearch = new BinarySearch(testArray, 0); //key value is not required for testing
         assertEquals(0,testSearch.iterativeSearch(testArray,0),"did not find first entry");
         assertEquals(9,testSearch.iterativeSearch(testArray,9),"did not find last entry");
     }
