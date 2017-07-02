@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Created by Corey Willinger on 6/29/2017.
  */
-public class SearchInRotatedArray {
+public class SearchInRotatedArray { //TODO refactor for testing and menu interface
 
     public static void main(String args[]){
         runAlgorithm();

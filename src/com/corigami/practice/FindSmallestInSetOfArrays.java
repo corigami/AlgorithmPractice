@@ -7,7 +7,7 @@ import javax.swing.plaf.synth.SynthTextAreaUI;
  *
  * Created by Corey Willinger on 6/30/2017.
  */
-public class FindSmallestInSetOfArrays {
+public class FindSmallestInSetOfArrays {  //TODO refactor for Menu interface and testing
     public static void main(String args[]){
         runAlgorithm();
     }

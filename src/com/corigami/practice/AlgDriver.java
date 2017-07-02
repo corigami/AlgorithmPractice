@@ -20,7 +20,8 @@ public class AlgDriver {
             System.out.println("1\tBinary Search");
             System.out.println("2\tMax in Sliding Window");
             System.out.println("3\tSearch in Rotated Array");
-            System.out.println("4\tFindSmallestInSetOfArrays");
+            System.out.println("4\tFind Smallest In Set Of Arrays");
+            System.out.println("5\tFind Low and High Indices of Keys");
             System.out.println("----------------------");
             userChoice = util.getUserInt("Which algorithm would you like to run? (-1 to exit)");
 
@@ -28,6 +29,14 @@ public class AlgDriver {
                 case 1:
                     algToRun = new BinarySearch();
                     break;
+                case 2:
+                    algToRun = new MaxInSlidingWindow();
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+
                 case -1:
                 default:
                     userContinue=false;
