@@ -1,6 +1,8 @@
 package com.corigami.practice;
 
 /**
+ * Executes the Binary Search Algorithm
+ *
  * Created by Corey Willinger on 6/26/2017.
  */
 public class BinarySearch implements IAlgInterface{
@@ -37,16 +39,18 @@ public class BinarySearch implements IAlgInterface{
     @Override
     public void getUserData() {
         arraySize = util.getUserInt("Enter size of array to search");
-        myArray = new MyArray(arraySize);
         searchVal = util.getUserInt("Enter the value to search for");
+        myArray = new MyArray(arraySize);
     }
 
     /**
      * This example firsts sorts the given algorithm and then recursively performs a bubble sort.  It then uses an
      * iterative method as an additional example.
+     *
      */
     @Override
     public void runAlgorithm(){
+
         myArray.bubbleSort();
         myArray.print("The Array");
 

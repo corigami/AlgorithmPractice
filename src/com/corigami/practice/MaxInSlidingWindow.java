@@ -6,24 +6,73 @@ import java.util.ArrayDeque;
 /**
  * Created by Corey Willinger on 6/28/2017.
  */
-public class MaxInSlidingWindow {
+public class MaxInSlidingWindow implements IAlgInterface {
+    private AlgUtility util = new AlgUtility();
+    private MyArray myArray;
+    private int windowSize;
+    private int arraySize;
+    private int[] results;  //used for testing
+
+    MaxInSlidingWindow(){
+        windowSize = util.genRandInt(3,5);
+        myArray = new MyArray();
+        arraySize = myArray.getSize();
+        results = new int[arraySize-windowSize+1];
+    }
+
+    MaxInSlidingWindow(int[] array, int WinSize){
+        windowSize = WinSize;
+        myArray = new MyArray(array);
+        arraySize = array.length;
+        results = new int[arraySize-windowSize+1];
+    }
+
+    MaxInSlidingWindow(int arraySize, int winSize){
+        windowSize = winSize;
+        arraySize = arraySize;
+        results = new int[arraySize-windowSize+1];
+    }
+
+    public int[] getResults() {
+        return results;
+    }
 
 
     public static void main(String args[]){
-        runAlgorithm();
+        MaxInSlidingWindow maxInSlide = new MaxInSlidingWindow();
+        maxInSlide.getUserData();
+        maxInSlide.runAlgorithm();
     }
 
-    public static void runAlgorithm() {
-        AlgUtility util = new AlgUtility();
-        MyArray myArray = new MyArray(util.getUserInt("Enter size of array to search"));
-        int windowSize = util.getUserInt("Enter window size of array");
+    /**
+     * Give the user an option to override the default random values
+     * used in the default constructor.
+     */
+    @Override
+    public void getUserData() {
+        arraySize = util.getUserInt("Enter size of array to search");
+        windowSize = util.getUserInt("Enter window size of array");
+        results = new int[arraySize-windowSize+1];
+        myArray = new MyArray(arraySize);
+    }
+
+    public void runAlgorithm() {
         myArray.print("The Array");
 
         System.out.println("Double Linked List Method:");
         findMaxInWindow(myArray.getData(),windowSize );
 
+        for(int i = 0; i <results.length; i++){
+            System.out.println("Window " + i + ": " + results[i]);
+        }
+
+
         System.out.println("Heap Method:");
         findMaxInWindowWithHeap(myArray.getData(),windowSize );
+
+        for(int i = 0; i <results.length; i++){
+            System.out.println("Window " + i + ": " + results[i]);
+        }
     }
 
     /**
@@ -34,19 +83,18 @@ public class MaxInSlidingWindow {
      * @param arrayToSearch the array to search through
      * @param winSize size of the window to evaluate.
      */
-    static void  findMaxInWindow(int[] arrayToSearch, int winSize){
+    public void findMaxInWindow(int[] arrayToSearch, int winSize){
         ArrayDeque<Integer> window = new ArrayDeque<>();
-        int winNum = 1;
+        int winNum = 0;
 
         //go through the array and only add the highest index to the window for the initial window size
         for(int i = 0; i < winSize; i++){
             while(!window.isEmpty() && arrayToSearch[i] >= arrayToSearch[window.peekLast()]){
                 window.removeLast();
             }
-
             window.addLast(i);
         }
-        System.out.println("Window " + winNum++ + ": " + arrayToSearch[window.peekFirst()]);
+        results[winNum++] = arrayToSearch[window.peekFirst()];
 
         for(int i = winSize; i < arrayToSearch.length; i++){
             //remove any indices from the window that are less than newest element.
@@ -61,27 +109,25 @@ public class MaxInSlidingWindow {
 
             //add the current element to the tail of the window
             window.addLast(i);
-            System.out.println("Window " + winNum++ + ": " + arrayToSearch[window.peekFirst()]);
+            results[winNum++] = arrayToSearch[window.peekFirst()];
         }
-
     }
 
-    static void findMaxInWindowWithHeap(int[] arrayToSearch, int winSize){
+    public void findMaxInWindowWithHeap(int[] arrayToSearch, int winSize){
         PriorityQueue<Integer> window = new PriorityQueue<>((x,y) -> y-x);
-        int winNum = 1;
+        int winNum = 0;
 
         //go through the array and only add the items in the window to the heap
         for(int i = 0; i < winSize; i++){
             window.add(arrayToSearch[i]);
             }
-
-        System.out.println("Window " + winNum++ + ": " + window.peek());
+        results[winNum++] = window.peek();
 
         // for each move, remove oldest object and add newest to the heap
         for(int i = winSize; i < arrayToSearch.length; i++){
             window.remove(arrayToSearch[i-winSize]);
             window.add(arrayToSearch[i]);
-            System.out.println("Window " + winNum++ + ": " + window.peek());
+            results[winNum++] = window.peek();
         }
     }
 

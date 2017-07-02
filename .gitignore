@@ -64,5 +64,5 @@ $RECYCLE.BIN/
 
 #IntelliJ
 out/
-.idea/
+*idea/
 *.iml
