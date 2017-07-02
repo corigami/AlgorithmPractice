@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4ebeb36-3a23-4595-a643-7b5a45fd058c" name="Default" comment="directory changes and added simple unit tests for binary search class">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/corigami/practice/MaxInSlidingWindowTest.java" />
+    <list default="true" id="b4ebeb36-3a23-4595-a643-7b5a45fd058c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/corigami/practice/BinarySearchTest.java" afterPath="$PROJECT_DIR$/test/com/corigami/practice/BinarySearchTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -524,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1498930854208</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added jUnit tests for FindMaxInWindow class">
+      <created>1498979609091</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1498979609091</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -585,8 +590,11 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="directory changes and added simple unit tests for binary search class" />
-    <option name="LAST_COMMIT_MESSAGE" value="directory changes and added simple unit tests for binary search class" />
+    <MESSAGE value="added jUnit tests for FindMaxInWindow class" />
+    <option name="LAST_COMMIT_MESSAGE" value="added jUnit tests for FindMaxInWindow class" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
