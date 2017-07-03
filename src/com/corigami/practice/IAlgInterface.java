@@ -14,4 +14,5 @@ public interface IAlgInterface {
      * Runs the algorithm example.
      */
     void runAlgorithm();
+
 }

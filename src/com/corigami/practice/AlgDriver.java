@@ -14,34 +14,26 @@ public class AlgDriver {
         AlgUtility util = new AlgUtility();
         int userChoice;
         boolean userContinue = true;
+        Vector<IAlgInterface> algorithms = new Vector<>();
+
+        algorithms.add(new BinarySearch());
+        algorithms.add(new MaxInSlidingWindow());
+       // algorithms.add(new SearchInRotatedArray());
+      //  algorithms.add(new FindSmallestInSetOfArrays());
+
         do {
             System.out.println(HEADER);
             System.out.println("----------------------");
-            System.out.println("1\tBinary Search");
-            System.out.println("2\tMax in Sliding Window");
-            System.out.println("3\tSearch in Rotated Array");
-            System.out.println("4\tFind Smallest In Set Of Arrays");
-            System.out.println("5\tFind Low and High Indices of Keys");
+            for(int i=0; i < algorithms.size();i++){
+                System.out.println((i+1) + "\t\t\t" + algorithms.get(i).getClass().getSimpleName());
+            }
             System.out.println("----------------------");
-            userChoice = util.getUserInt("Which algorithm would you like to run? (-1 to exit)");
-
-            switch(userChoice){
-                case 1:
-                    algToRun = new BinarySearch();
-                    break;
-                case 2:
-                    algToRun = new MaxInSlidingWindow();
-                    break;
-                case 3:
-                    break;
-                case 4:
-                    break;
-
-                case -1:
-                default:
-                    userContinue=false;
+            userChoice = util.getUserInt("Which algorithm would you like to run(1-" + algorithms.size() + ", -1 to exit)?");
+            if(userChoice== -1){
+                userContinue=false;
             }
             if(userContinue){
+                algToRun = algorithms.get(userChoice-1);
                 algToRun.getUserData();
                 algToRun.runAlgorithm();
                 System.out.println("\n\n");
