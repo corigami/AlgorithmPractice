@@ -11,25 +11,38 @@ public class SearchInRotatedArray implements IAlgInterface {
     private int shiftVal;
 
     private AlgUtility util = new AlgUtility();
+
+    public MyArray getMyArray() {
+        return myArray;
+    }
+
     private MyArray myArray;
 
     SearchInRotatedArray(){
         searchVal = util.genRandInt(0,100);
         arraySize = 100;
-        shiftVal = util.genRandInt(0,100);
         myArray = new MyArray(arraySize);
+        shiftVal = util.genRandInt(0,arraySize-1);
     }
 
-    SearchInRotatedArray(int[] array, int val){
-        searchVal = val;
+    SearchInRotatedArray(int[] array, int valToSearch){
+        searchVal = valToSearch;
         myArray = new MyArray(array);
         arraySize = array.length;
+        shiftVal = util.genRandInt(0,arraySize-1);
     }
 
-    SearchInRotatedArray(int val, int size){
-        searchVal = val;
+    SearchInRotatedArray(int[] array, int valToSearch, int amountToShift){
+        searchVal = valToSearch;
+        myArray = new MyArray(array);
+        arraySize = array.length;
+        shiftVal = amountToShift;
+    }
+
+    SearchInRotatedArray(int valToSearch, int size){
+        searchVal = valToSearch;
         arraySize = size;
-        shiftVal = util.genRandInt(0,100);
+        shiftVal = util.genRandInt(0,arraySize-1);
         myArray = new MyArray(arraySize);
     }
 
@@ -57,7 +70,7 @@ public class SearchInRotatedArray implements IAlgInterface {
         myArray.print("The Array");
 
         System.out.println("Recursive Method:");
-        int index = recusriveSearch(myArray.getData(), searchVal, 0, myArray.getSize()-1);
+        int index = recursiveSearch(myArray.getData(), searchVal, 0, myArray.getSize()-1);
         if(index != -1){
             System.out.println("Your value was found at index: " + index);
         }else{
@@ -76,7 +89,7 @@ public class SearchInRotatedArray implements IAlgInterface {
      * @param high upper bound of array
      * @return index of match or -1 if not found
      */
-    public int recusriveSearch(int[] arrayToSearch, int key, int low, int high){
+    public int recursiveSearch(int[] arrayToSearch, int key, int low, int high){
         int mid = ((high - low)/2)+low;
         int midVal = arrayToSearch[mid];
         System.out.println("low:  " + low + "   mid: " + mid + "  midVal: " + midVal + "   high: " + high);
@@ -87,13 +100,13 @@ public class SearchInRotatedArray implements IAlgInterface {
 
 
         if(arrayToSearch[low] < arrayToSearch[mid] && key < arrayToSearch[mid] && key >= arrayToSearch[low]) {
-            return recusriveSearch(arrayToSearch, key, low, mid - 1);  //value is lower half
+            return recursiveSearch(arrayToSearch, key, low, mid - 1);  //value is lower half
         }else if(arrayToSearch[mid] < arrayToSearch[high] && key > arrayToSearch[mid] && key <=arrayToSearch[high]){
-            return recusriveSearch(arrayToSearch, key, mid + 1, high); //value is in upper half
+            return recursiveSearch(arrayToSearch, key, mid + 1, high); //value is in upper half
         }else if(arrayToSearch[low] > arrayToSearch[mid]) {
-            return recusriveSearch(arrayToSearch, key, low, mid - 1);
+            return recursiveSearch(arrayToSearch, key, low, mid - 1);
         }else if(arrayToSearch[high] < arrayToSearch[mid]){
-            return recusriveSearch(arrayToSearch, key, mid + 1, high);
+            return recursiveSearch(arrayToSearch, key, mid + 1, high);
         }
 
         return -1;
