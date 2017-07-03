@@ -28,10 +28,12 @@ public class BinarySearch implements IAlgInterface{
     }
 
 
-
+    /**
+     * Main method: executes the program using default parameters
+     * @param args
+     */
     public static void main(String args[]){
         BinarySearch newSearch = new BinarySearch();
-        newSearch.getUserData();
         newSearch.runAlgorithm();
      }
 
