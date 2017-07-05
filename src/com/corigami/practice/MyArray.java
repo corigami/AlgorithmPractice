@@ -12,7 +12,6 @@ public class MyArray {
     private final int MAX;
     private final int SIZE;
     private int[] data;
-
     AlgUtility util = new AlgUtility();
 
     MyArray(){
@@ -47,10 +46,15 @@ public class MyArray {
      * Fills array with random values
      */
     public void fill(){
-        util = new AlgUtility();
         Random random = util.genRandom();
         for(int i=0; i < SIZE; i++){
             data[i] = random.nextInt((MAX - MIN) + 1) + MIN;
+        }
+    }
+
+    public void fill(Random rand){
+        for(int i=0; i < SIZE; i++){
+            data[i] = rand.nextInt((MAX - MIN) + 1) + MIN;
         }
     }
 
@@ -127,5 +131,9 @@ public class MyArray {
         int temp = data[i];
         data[i] = data[j];
         data[j] = temp;
+    }
+
+    public String getName(){
+         return null;
     }
 }

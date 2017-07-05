@@ -1,38 +1,68 @@
 package com.corigami.practice;
 
 import javax.swing.plaf.synth.SynthTextAreaUI;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 /**
  * This program demonstrates how to search through any number of arrays given for the lowest matching number.
  *
  * Created by Corey Willinger on 6/30/2017.
  */
-public class FindSmallestInSetOfArrays {  //TODO refactor for Menu interface and testing
-    public static void main(String args[]){
-        runAlgorithm();
+public class FindSmallestInSetOfArrays implements IAlgInterface
+{
+    AlgUtility util = new AlgUtility();
+    private int numArrays;
+    private int arraySize;
+    MyArray[] myArrays;                 //array to store arrays
+    int[] pointers;                     //keeps track of pointers for each array
+
+
+    FindSmallestInSetOfArrays(MyArray[] arrays){
+        myArrays = arrays;
+        numArrays = myArrays.length;
+        pointers = new int[numArrays];
     }
 
-    private static void runAlgorithm() {
+    FindSmallestInSetOfArrays(){
+        numArrays = util.genRandInt(3,6);
+        pointers = new int[numArrays];
+        myArrays = new MyArray[numArrays];
+        for(int i=0; i <numArrays;i++){
+            myArrays[i] = new MyArray(util.genRandInt(17,20));
+            myArrays[i].fill();
+            myArrays[i].bubbleSort();
+        }
+    }
 
-        AlgUtility util = new AlgUtility();
-        boolean reachedEnd= false;
-        boolean matchFound=false;
+    public static void main(String args[]){
+        FindSmallestInSetOfArrays findSmall = new FindSmallestInSetOfArrays();
+        findSmall.runAlgorithm();
+    }
 
-        int numArrays = util.getUserInt("Enter then number of Arrays to check");
-        int arraySize = util.getUserInt("Enter size of Array");
-        MyArray[] myArrays = new MyArray[numArrays];
-        int[] pointers = new int[numArrays];
+    @Override
+    public void getUserData() {
 
+        numArrays = util.getUserInt("Enter then number of Arrays to check");
+        arraySize = util.getUserInt("Enter size of Array");
+        myArrays = new MyArray[numArrays];
+        pointers = new int[numArrays];
         for(int i=0; i < numArrays; i++){
             myArrays[i] = new MyArray(arraySize);
             myArrays[i].bubbleSort();
             myArrays[i].print("Array " + i);
         }
-        int lowArray =0;
+    }
 
-           while(!matchFound && !reachedEnd){
-               matchFound = true;
-               lowArray =0;
+    @Override
+    public void runAlgorithm() {
+        boolean reachedEnd= false;
+        boolean matchFound=false;
+        int lowArray;
+
+        while(!matchFound && !reachedEnd){
+            matchFound = true;
+            lowArray =0;
                 for(int i= 0; i <pointers.length-1; i++){
                     int val1 = myArrays[i].getData()[pointers[i]];
                     int val2 = myArrays[i+1].getData()[pointers[i+1]];
@@ -47,7 +77,7 @@ public class FindSmallestInSetOfArrays {  //TODO refactor for Menu interface and
                    pointers[lowArray]++;
                }else{
                    reachedEnd = true;
-                   System.out.println("Reached End");
+                   System.out.println("Reached End - No common numbers in all arrays");
 
                }
                 if(matchFound){

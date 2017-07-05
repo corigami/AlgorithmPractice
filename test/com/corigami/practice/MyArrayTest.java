@@ -52,5 +52,4 @@ class MyArrayTest {
         assertEquals("first index is wrong", newFirstVal, testArray.getDataAt(0));
         assertEquals("last index is wrong", newLastVal, testArray.getDataAt(testArray.getSize() - 1));
     }
-
 }

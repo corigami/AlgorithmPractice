@@ -19,6 +19,7 @@ public class AlgDriver {
         algorithms.add(new BinarySearch());
         algorithms.add(new MaxInSlidingWindow());
         algorithms.add(new SearchInRotatedArray());
+        algorithms.add(new FindSmallestInSetOfArrays());
       //  algorithms.add(new FindSmallestInSetOfArrays());
 
         do {
