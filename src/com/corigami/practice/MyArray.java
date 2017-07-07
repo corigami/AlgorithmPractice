@@ -52,6 +52,10 @@ public class MyArray {
         }
     }
 
+    /**
+     * Fills array using provided Random object
+     * @param rand Random object to use to fill array
+     */
     public void fill(Random rand){
         for(int i=0; i < SIZE; i++){
             data[i] = rand.nextInt((MAX - MIN) + 1) + MIN;
