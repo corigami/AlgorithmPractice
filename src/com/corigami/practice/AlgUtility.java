@@ -10,10 +10,10 @@ public class AlgUtility {
 
     /**
      * Generates an array of ints with the given parameters.
-     * @param size
-     * @param min
-     * @param max
-     * @return
+     * @param size size of array
+     * @param min minimum value to use for random nuumbers
+     * @param max maximum value to use for nandom numbers
+     * @return array filled with random numbers
      */
     public int[] genArray(int size, int min, int max){
       Random random = genRandom();
@@ -26,20 +26,44 @@ public class AlgUtility {
         return array;
     }
 
+    /**
+     * returns a new Random object
+     * @return Random object with seed set to current system time
+     */
     public Random genRandom(){
         Random newRand = new Random();
         newRand.setSeed(System.currentTimeMillis());
         return newRand;
     }
 
+    /**
+     * Generates a random integer
+     * @param min minimum value to return
+     * @param max maximum value to return
+     * @return random value between min and bax
+     */
     public int genRandInt(int min, int max){
         Random newRand = genRandom();
         return newRand.nextInt((max - min) + 1) + min;
     }
 
+
+    /**
+     * Prompts the user to enter a value.
+     * @param message
+     * @return
+     */
     public int getUserInt(String message){
+        int value;
         System.out.print(message + ": ");
-        return input.nextInt();
+        try{
+            value =  input.nextInt();
+            return value;
+        }catch (Exception e){
+            System.out.println("You didn't enter a proper integer, please try again.");
+            return getUserInt(message);
+        }
+
     }
 
     /**
