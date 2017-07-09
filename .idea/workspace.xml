@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4ebeb36-3a23-4595-a643-7b5a45fd058c" name="Default" comment="doc: update docs on AlgUtility">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/corigami/practice/AlgUtilityTest.java" />
+    <list default="true" id="b4ebeb36-3a23-4595-a643-7b5a45fd058c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/corigami/practice/ShiftElements.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/corigami/practice/ShiftElementsTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,37 +30,23 @@
     <favorites_list name="AlgorithmPractice" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.4632555">
       <split-first>
-        <leaf>
-          <file leaf-file-name="FindLowAndHighIndex.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/corigami/practice/FindLowAndHighIndex.java">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
+          <file leaf-file-name="ShiftElements.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/com/corigami/practice/ShiftElements.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="404">
-                  <caret line="52" column="0" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="52" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AlgUtility.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/corigami/practice/AlgUtility.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="23" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AlgUtilityTest.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/test/com/corigami/practice/AlgUtilityTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1320">
-                  <caret line="39" column="43" lean-forward="false" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+                <state relative-caret-position="2409">
+                  <caret line="73" column="22" lean-forward="false" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
                   <folding>
-                    <element signature="e#407#408#0" expanded="true" />
-                    <element signature="e#458#459#0" expanded="true" />
+                    <element signature="e#277#278#0" expanded="true" />
+                    <element signature="e#323#324#0" expanded="true" />
+                    <element signature="e#356#357#0" expanded="true" />
+                    <element signature="e#400#401#0" expanded="true" />
+                    <element signature="e#435#436#0" expanded="true" />
+                    <element signature="e#465#466#0" expanded="true" />
+                    <element signature="e#511#512#0" expanded="true" />
+                    <element signature="e#571#572#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -69,12 +56,15 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="AlgUtility.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/com/corigami/practice/AlgUtility.java">
+          <file leaf-file-name="ShiftElementsTest.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/test/com/corigami/practice/ShiftElementsTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-880">
-                  <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-                  <folding />
+                <state relative-caret-position="990">
+                  <caret line="34" column="41" lean-forward="false" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+                  <folding>
+                    <element signature="e#350#351#0" expanded="true" />
+                    <element signature="e#397#398#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -122,13 +112,13 @@
         <option value="$PROJECT_DIR$/test/com/corigami/practice/FindLowAndHighIndexTest.java" />
         <option value="$PROJECT_DIR$/src/com/corigami/practice/AlgUtility.java" />
         <option value="$PROJECT_DIR$/test/com/corigami/practice/AlgUtilityTest.java" />
+        <option value="$PROJECT_DIR$/src/com/corigami/practice/moveEmptyElements.java" />
+        <option value="$PROJECT_DIR$/test/com/corigami/practice/MoveEmptyElementsTest.java" />
+        <option value="$PROJECT_DIR$/src/com/corigami/practice/MoveEmptyElements.java" />
+        <option value="$PROJECT_DIR$/src/com/corigami/practice/ShiftElements.java" />
+        <option value="$PROJECT_DIR$/test/com/corigami/practice/ShiftElementsTest.java" />
       </list>
     </option>
-  </component>
-  <component name="JavaAutoRunManager">
-    <enabled-run-configurations>
-      <run-configuration type="JUnit" name="com.corigami.practice in AlgorithmPractice" />
-    </enabled-run-configurations>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-13" />
@@ -151,8 +141,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -204,6 +192,8 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -234,59 +224,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AlgUtilityTest.genArray2">
-    <configuration default="false" name="FindLowAndHighIndexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.corigami.practice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="AlgorithmPractice" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.corigami.practice" />
-      <option name="MAIN_CLASS_NAME" value="com.corigami.practice.FindLowAndHighIndexTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="FindLowAndHighIndexTest.findHighIndex1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.corigami.practice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="AlgorithmPractice" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.corigami.practice" />
-      <option name="MAIN_CLASS_NAME" value="com.corigami.practice.FindLowAndHighIndexTest" />
-      <option name="METHOD_NAME" value="findHighIndex1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.ShiftElementsTest.testShiftToEnd">
     <configuration default="false" name="AlgUtilityTest.genArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -353,6 +291,58 @@
       <option name="MAIN_CLASS_NAME" value="com.corigami.practice.AlgUtilityTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ShiftElementsTest.testShiftToFront" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.corigami.practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AlgorithmPractice" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.corigami.practice" />
+      <option name="MAIN_CLASS_NAME" value="com.corigami.practice.ShiftElementsTest" />
+      <option name="METHOD_NAME" value="testShiftToFront" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ShiftElementsTest.testShiftToEnd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.corigami.practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AlgorithmPractice" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.corigami.practice" />
+      <option name="MAIN_CLASS_NAME" value="com.corigami.practice.ShiftElementsTest" />
+      <option name="METHOD_NAME" value="testShiftToEnd" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -569,7 +559,7 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="com.corigami.practice in AlgorithmPractice" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+    <configuration default="false" name="Whole project" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.corigami.practice.*" />
@@ -596,20 +586,20 @@
       <method />
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.com.corigami.practice in AlgorithmPractice" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.FindLowAndHighIndexTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.FindLowAndHighIndexTest.findHighIndex1" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.AlgUtilityTest.genArray" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.AlgUtilityTest.genArray2" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.AlgUtilityTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.Whole project" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.AlgUtilityTest.genArray" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.AlgUtilityTest.genArray2" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.AlgUtilityTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ShiftElementsTest.testShiftToFront" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ShiftElementsTest.testShiftToEnd" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.AlgUtilityTest.genArray2" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.AlgUtilityTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.AlgUtilityTest.genArray" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.FindLowAndHighIndexTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.FindLowAndHighIndexTest.findHighIndex1" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ShiftElementsTest.testShiftToEnd" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ShiftElementsTest.testShiftToFront" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.AlgUtilityTest.genArray2" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.AlgUtilityTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.AlgUtilityTest.genArray" />
       </list>
     </recent_temporary>
   </component>
@@ -715,39 +705,46 @@
       <option name="project" value="LOCAL" />
       <updated>1499580635549</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Test: added basic unit tests for AlgUtility">
+      <created>1499582234370</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1499582234370</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AlgUtilityTest - 2017.07.09 at 11h 06m 06s.xml">
-      <configuration name="AlgUtilityTest" configurationId="JUnit" />
+    <history-entry file="ShiftElementsTest_testShiftToEnd - 2017.07.09 at 12h 07m 53s.xml">
+      <configuration name="ShiftElementsTest.testShiftToEnd" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AlgUtilityTest_genArray - 2017.07.09 at 10h 51m 00s.xml">
-      <configuration name="AlgUtilityTest.genArray" configurationId="JUnit" />
+    <history-entry file="ShiftElementsTest_testShiftToEnd - 2017.07.09 at 12h 08m 10s.xml">
+      <configuration name="ShiftElementsTest.testShiftToEnd" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AlgUtilityTest_genArray - 2017.07.09 at 10h 51m 17s.xml">
-      <configuration name="AlgUtilityTest.genArray" configurationId="JUnit" />
+    <history-entry file="ShiftElementsTest_testShiftToEnd - 2017.07.09 at 12h 08m 26s.xml">
+      <configuration name="ShiftElementsTest.testShiftToEnd" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AlgUtilityTest_genArray2 - 2017.07.09 at 10h 53m 26s.xml">
-      <configuration name="AlgUtilityTest.genArray2" configurationId="JUnit" />
+    <history-entry file="ShiftElementsTest_testShiftToEnd - 2017.07.09 at 12h 09m 02s.xml">
+      <configuration name="ShiftElementsTest.testShiftToEnd" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AlgUtilityTest_genArray2 - 2017.07.09 at 11h 06m 29s.xml">
-      <configuration name="AlgUtilityTest.genArray2" configurationId="JUnit" />
+    <history-entry file="ShiftElementsTest_testShiftToFront - 2017.07.09 at 11h 49m 24s.xml">
+      <configuration name="ShiftElementsTest.testShiftToFront" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindLowAndHighIndexTest_findHighIndex1 - 2017.07.07 at 12h 51m 02s.xml">
-      <configuration name="FindLowAndHighIndexTest.findHighIndex1" configurationId="JUnit" />
+    <history-entry file="ShiftElementsTest_testShiftToFront - 2017.07.09 at 11h 55m 00s.xml">
+      <configuration name="ShiftElementsTest.testShiftToFront" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindLowAndHighIndexTest_findHighIndex1 - 2017.07.07 at 12h 54m 04s.xml">
-      <configuration name="FindLowAndHighIndexTest.findHighIndex1" configurationId="JUnit" />
+    <history-entry file="ShiftElementsTest_testShiftToFront - 2017.07.09 at 11h 57m 58s.xml">
+      <configuration name="ShiftElementsTest.testShiftToFront" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindLowAndHighIndexTest_findHighIndex1 - 2017.07.07 at 12h 54m 49s.xml">
-      <configuration name="FindLowAndHighIndexTest.findHighIndex1" configurationId="JUnit" />
+    <history-entry file="ShiftElementsTest_testShiftToFront - 2017.07.09 at 11h 58m 34s.xml">
+      <configuration name="ShiftElementsTest.testShiftToFront" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindLowAndHighIndexTest_findLowIndex2 - 2017.07.07 at 12h 41m 11s.xml">
-      <configuration name="FindLowAndHighIndexTest.findLowIndex2" configurationId="JUnit" />
+    <history-entry file="ShiftElementsTest_testShiftToFront - 2017.07.09 at 12h 04m 22s.xml">
+      <configuration name="ShiftElementsTest.testShiftToFront" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FindLowAndHighIndexTest_findLowIndex3 - 2017.07.07 at 12h 41m 37s.xml">
-      <configuration name="FindLowAndHighIndexTest.findLowIndex3" configurationId="JUnit" />
+    <history-entry file="ShiftElementsTest_testShiftToFront - 2017.07.09 at 12h 05m 24s.xml">
+      <configuration name="ShiftElementsTest.testShiftToFront" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -761,6 +758,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3026" height="1946" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947624" sideWeight="0.4945055" order="7" side_tool="false" content_ui="tabs" />
@@ -777,8 +775,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947624" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21840659" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22149725" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23695055" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -791,6 +788,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6167582" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -798,7 +796,7 @@
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32947624" sideWeight="0.50549453" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947624" sideWeight="0.50549453" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -808,7 +806,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32947624" sideWeight="0.4945055" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947624" sideWeight="0.4945055" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886723" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -818,7 +816,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947624" sideWeight="0.49862638" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6167582" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947624" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21840659" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22149725" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -841,7 +839,8 @@
     <MESSAGE value="chore: updated comments." />
     <MESSAGE value="Feat: Added new FindLowAnHighIndex algorithm class with unit tests." />
     <MESSAGE value="doc: update docs on AlgUtility" />
-    <option name="LAST_COMMIT_MESSAGE" value="doc: update docs on AlgUtility" />
+    <MESSAGE value="Test: added basic unit tests for AlgUtility" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test: added basic unit tests for AlgUtility" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -854,6 +853,41 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/corigami/practice/FindLowAndHighIndex.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1716">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="50" selection-start-column="32" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/corigami/practice/AlgUtilityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1023">
+          <caret line="39" column="43" lean-forward="false" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+          <folding>
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/corigami/practice/MyArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3564">
+          <caret line="121" column="9" lean-forward="true" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/corigami/practice/AlgUtility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/corigami/practice/FindLowAndHighIndex.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2739">
@@ -882,7 +916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1287">
           <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1028,14 +1061,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/corigami/practice/MyArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1489">
-          <caret line="121" column="9" lean-forward="true" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/corigami/practice/BinarySearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2904">
@@ -1056,7 +1081,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
           <caret line="43" column="9" lean-forward="false" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1070,27 +1094,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/corigami/practice/FindLowAndHighIndex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="52" column="0" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="1716">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="50" selection-start-column="32" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/corigami/practice/AlgUtility.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="23" />
+        <state relative-caret-position="33">
+          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/corigami/practice/AlgUtilityTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
+        <state relative-caret-position="1023">
           <caret line="39" column="43" lean-forward="false" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
           <folding>
             <element signature="e#407#408#0" expanded="true" />
             <element signature="e#458#459#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/corigami/practice/MyArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1489">
+          <caret line="121" column="9" lean-forward="false" selection-start-line="121" selection-start-column="9" selection-end-line="121" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/corigami/practice/ShiftElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2409">
+          <caret line="73" column="22" lean-forward="false" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
+          <folding>
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/corigami/practice/ShiftElementsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="34" column="41" lean-forward="false" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+          <folding>
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
           </folding>
         </state>
       </provider>
