@@ -110,6 +110,46 @@ public class MyArray {
         }
     }
 
+    protected void quickSort(){
+        recursiveQuickSort(0, data.length-1);
+    }
+
+    private int quickSortPart(int low, int high){
+        int i = low;
+        int j = high;
+        int pivotVal = data[low];
+
+        //separate values based on relationship to pivot
+        while(i < j ){
+            while( i <= high && data[i] <=pivotVal){
+                i++;
+            }
+            while (data[j] > pivotVal){
+                j--;
+            }
+            if( i < j){
+                swap(i,j);
+            }else{
+                break;
+            }
+        }
+        data[low] = data[j];
+        data[j] = pivotVal;
+
+        return j;
+    }
+
+    private void recursiveQuickSort(int low, int high){
+        if(low < high){
+            int pivot = quickSortPart(low,high);
+            //sort left side
+            recursiveQuickSort(low, pivot-1);
+            //sort right side
+            recursiveQuickSort(pivot+1, high);
+        }
+    }
+
+
     /**
      * Rotates the contents of the array by a set value.
      * @param val

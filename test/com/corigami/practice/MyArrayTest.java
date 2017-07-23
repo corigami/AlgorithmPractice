@@ -52,4 +52,16 @@ class MyArrayTest {
         assertEquals("first index is wrong", newFirstVal, testArray.getDataAt(0));
         assertEquals("last index is wrong", newLastVal, testArray.getDataAt(testArray.getSize() - 1));
     }
+
+    @Test
+    @DisplayName("Test Quick sort")
+    void quickSortTest(){
+        testArray.quickSort();
+        int[] values = testArray.getData();
+        for (int i = 1; i < values.length; i++){
+            assertTrue(values[i-1] <= values[i]);
+        }
+    }
+
+
 }
